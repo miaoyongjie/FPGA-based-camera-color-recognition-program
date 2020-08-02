@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 10:58:16 2020
+# Process ID: 13008
+# Current directory: C:/Vivado/NEXYS 4 DDR_Project/OV7670_VGA/OV7670_VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14968 C:\Vivado\NEXYS 4 DDR_Project\OV7670_VGA\OV7670_VGA\project_1.xpr
+# Log file: C:/Vivado/NEXYS 4 DDR_Project/OV7670_VGA/OV7670_VGA/vivado.log
+# Journal file: C:/Vivado/NEXYS 4 DDR_Project/OV7670_VGA/OV7670_VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Vivado/NEXYS 4 DDR_Project/OV7670_VGA/OV7670_VGA/project_1.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/OV7670_VGA/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [HDL 9-3756] overwriting previous definition of module 'CLK' [C:/Vivado/NEXYS 4 DDR_Project/OV7670_VGA/OV7670_VGA/project_1.srcs/sources_1/bd/CLK/synth/CLK.v:13]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'DPRAM' [C:/Vivado/NEXYS 4 DDR_Project/OV7670_VGA/OV7670_VGA/project_1.srcs/sources_1/bd/DPRAM/synth/DPRAM.v:13]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'CLK' [C:/Vivado/NEXYS 4 DDR_Project/OV7670_VGA/OV7670_VGA/project_1.srcs/sources_1/bd/CLK/sim/CLK.v:13]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'DPRAM' [C:/Vivado/NEXYS 4 DDR_Project/OV7670_VGA/OV7670_VGA/project_1.srcs/sources_1/bd/DPRAM/sim/DPRAM.v:13]
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 11:02:46 2020...

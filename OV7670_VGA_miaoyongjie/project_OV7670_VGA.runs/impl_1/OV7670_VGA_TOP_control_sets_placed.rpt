@@ -1,0 +1,86 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Aug  2 10:10:17 2020
+| Host         : DESKTOP-DVPQBLI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file OV7670_VGA_TOP_control_sets_placed.rpt
+| Design       : OV7670_VGA_TOP
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    64 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      7 |            1 |
+|     10 |            1 |
+|     11 |            2 |
+|     12 |            1 |
+|     15 |            1 |
+|    16+ |            9 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              43 |           32 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              60 |           26 |
+| Yes          | No                    | No                     |              59 |           21 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             110 |           29 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+--------------------------------------------+---------------------------------------------+------------------+----------------+
+|                Clock Signal                |                Enable Signal               |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++--------------------------------------------+--------------------------------------------+---------------------------------------------+------------------+----------------+
+|  CLK/CLK_CVT/CLK_i/clk_wiz_0/inst/clk_out1 | I_VGA/h_synch                              | I_VGA/h_synch_i_1_n_0                       |                1 |              1 |
+|  OV7670_PCLK_IBUF_BUFG                     | OV7670_HREF_IBUF                           |                                             |                6 |              7 |
+|  CLK/CLK_CVT/CLK_i/clk_wiz_0/inst/clk_out1 | I_DEBOUNCE/dr0                             | I_CFG_OV7670/I_SCCB_sender/dr[30]_i_1_n_0   |                2 |             10 |
+|  CLK/CLK_CVT/CLK_i/clk_wiz_0/inst/clk_out1 |                                            | I_DEBOUNCE/sys_rst                          |                4 |             11 |
+|  CLK/CLK_CVT/CLK_i/clk_wiz_0/inst/clk_out1 | I_VGA/line_count_1                         | I_DEBOUNCE/sys_rst                          |                4 |             11 |
+|  CLK/CLK_CVT/CLK_i/clk_wiz_0/inst/clk_out1 |                                            | I_VGA/R_o[3]_i_1_n_0                        |                8 |             12 |
+|  OV7670_PCLK_IBUF_BUFG                     |                                            |                                             |               11 |             15 |
+|  CLK/CLK_CVT/CLK_i/clk_wiz_0/inst/clk_out1 |                                            | I_CFG_OV7670/I_CFG_REG/dout[15]_i_1_n_0     |                9 |             17 |
+|  CLK/CLK_CVT/CLK_i/clk_wiz_0/inst/clk_out1 | I_CFG_OV7670/I_CFG_REG/cntr_rep[6]_i_1_n_0 | I_DEBOUNCE/sys_rst                          |                4 |             18 |
+|  CLK/CLK_CVT/CLK_i/clk_wiz_0/inst/clk_out1 | I_VGA/dp_en                                | I_VGA/pixel_addr[0]_i_1_n_0                 |                5 |             19 |
+|  OV7670_PCLK_IBUF_BUFG                     | OV7670_CAPTURE/ov2ram_wr                   | I_DEBOUNCE/buff_addr0                       |                5 |             19 |
+|  CLK/CLK_CVT/CLK_i/clk_wiz_0/inst/clk_out1 |                                            | I_CFG_OV7670/I_SCCB_sender/cntr[20]_i_1_n_0 |                5 |             20 |
+|  CLK/CLK_CVT/CLK_i/clk_wiz_0/inst/clk_out1 | I_DEBOUNCE/dr0                             |                                             |                7 |             20 |
+|  CLK/CLK_CVT/CLK_i/clk_wiz_0/inst/clk_out1 |                                            |                                             |               21 |             28 |
+|  CLK/CLK_CVT/CLK_i/clk_wiz_0/inst/clk_out1 | I_DEBOUNCE/init[0]_i_1_n_0                 |                                             |                8 |             32 |
+|  CLK/CLK_CVT/CLK_i/clk_wiz_0/inst/clk_out1 | I_DEBOUNCE/sel                             | I_DEBOUNCE/clear                            |                8 |             32 |
++--------------------------------------------+--------------------------------------------+---------------------------------------------+------------------+----------------+
+
+

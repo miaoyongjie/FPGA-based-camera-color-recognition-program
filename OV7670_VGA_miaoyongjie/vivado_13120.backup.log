@@ -1,0 +1,95 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 30 23:01:41 2020
+# Process ID: 13120
+# Current directory: D:/OV7670_VGA/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8204 D:\OV7670_VGA\project_1\project_1.xpr
+# Log file: D:/OV7670_VGA/project_1/vivado.log
+# Journal file: D:/OV7670_VGA/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/OV7670_VGA/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'DPRAM.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+DPRAM_blk_mem_gen_0_0
+
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'CLK.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+CLK_clk_wiz_0_0
+
+INFO: [Project 1-230] Project 'project_1.xpr' upgraded for this version of Vivado.
+CRITICAL WARNING: [Common 17-1649] The Vivado message database 'D:/OV7670_VGA/project_1/project_1.runs/synth_1/vivado.pb' contains 30527 messages. Restoring all messages from this message database will impact Vivado performance, so only WARNING, CRITICAL WARNING, and ERROR messages will be restored. To restore all messages from this file use the tcl command 'set_param messaging.loadPbLimit 30528' and re-open the project.
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip [get_ips  {CLK_clk_wiz_0_0 DPRAM_blk_mem_gen_0_0}] -log ip_upgrade.log
+Adding cell -- xilinx.com:ip:clk_wiz:5.2 - clk_wiz_0
+Successfully read diagram <CLK> from BD file <D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/CLK.bd>
+Upgrading 'D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/CLK.bd'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKIN1_PERIOD' from '10.000' to '10.0' has been ignored for IP 'CLK_clk_wiz_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKIN2_PERIOD' from '10.000' to '10.0' has been ignored for IP 'CLK_clk_wiz_0_0'
+WARNING: [IP_Flow 19-3501] Upgraded CLK_clk_wiz_0_0 from Clocking Wizard 5.2 to Clocking Wizard 6.0, with warnings. Please review the message log.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'CLK_clk_wiz_0_0' has identified issues that may require user intervention. Please review the upgrade log 'd:/OV7670_VGA/project_1/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <D:\OV7670_VGA\project_1\project_1.srcs\sources_1\bd\CLK\CLK.bd> 
+INFO: [BD 41-2124] The block design file <D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/CLK.bd> has changed from an XML format to a JSON format. All flows are expected to work as in prior versions of Vivado. Please contact your Xilinx Support representative, in case of any issues.
+Wrote  : <D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/ui/bd_bc006c82.ui> 
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0
+Successfully read diagram <DPRAM> from BD file <D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/DPRAM.bd>
+Upgrading 'D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/DPRAM.bd'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [IP_Flow 19-1972] Upgraded DPRAM_blk_mem_gen_0_0 from Block Memory Generator 8.3 to Block Memory Generator 8.4
+Wrote  : <D:\OV7670_VGA\project_1\project_1.srcs\sources_1\bd\DPRAM\DPRAM.bd> 
+INFO: [BD 41-2124] The block design file <D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/DPRAM.bd> has changed from an XML format to a JSON format. All flows are expected to work as in prior versions of Vivado. Please contact your Xilinx Support representative, in case of any issues.
+Wrote  : <D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/ui/bd_8950e252.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/OV7670_VGA/project_1/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1136.797 ; gain = 330.301
+export_ip_user_files -of_objects [get_ips {CLK_clk_wiz_0_0 DPRAM_blk_mem_gen_0_0}] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+Wrote  : <D:\OV7670_VGA\project_1\project_1.srcs\sources_1\bd\DPRAM\DPRAM.bd> 
+VHDL Output written to : D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/synth/DPRAM.v
+VHDL Output written to : D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/sim/DPRAM.v
+VHDL Output written to : D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/hdl/DPRAM_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+Exporting to file D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/hw_handoff/DPRAM.hwh
+Generated Block Design Tcl file D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/hw_handoff/DPRAM_bd.tcl
+Generated Hardware Definition File D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/synth/DPRAM.hwdef
+Wrote  : <D:\OV7670_VGA\project_1\project_1.srcs\sources_1\bd\CLK\CLK.bd> 
+VHDL Output written to : D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/synth/CLK.v
+VHDL Output written to : D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/sim/CLK.v
+VHDL Output written to : D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/hdl/CLK_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/hw_handoff/CLK.hwh
+Generated Block Design Tcl file D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/hw_handoff/CLK_bd.tcl
+Generated Hardware Definition File D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/synth/CLK.hwdef
+WARNING: [HDL 9-3756] overwriting previous definition of module 'CLK' [D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/synth/CLK.v:13]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'DPRAM' [D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/synth/DPRAM.v:13]
+[Thu Jul 30 23:02:42 2020] Launched synth_1...
+Run output will be captured here: D:/OV7670_VGA/project_1/project_1.runs/synth_1/runme.log
+WARNING: [HDL 9-3756] overwriting previous definition of module 'CLK' [D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/sim/CLK.v:13]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'DPRAM' [D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/sim/DPRAM.v:13]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: OV7670_VGA_TOP
+CRITICAL WARNING: [filemgmt 20-1741] File 'DPRAM.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:
+* DPRAM (D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/hdl/DPRAM.v)
+* DPRAM (D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/synth/DPRAM.v)
+Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
+CRITICAL WARNING: [filemgmt 20-1741] File 'CLK.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:
+* CLK (D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/hdl/CLK.v)
+* CLK (D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/synth/CLK.v)
+Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
+WARNING: [Synth 8-2490] overwriting previous definition of module DPRAM [D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/DPRAM/synth/DPRAM.v:13]
+WARNING: [Synth 8-2490] overwriting previous definition of module CLK [D:/OV7670_VGA/project_1/project_1.srcs/sources_1/bd/CLK/synth/CLK.v:13]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1306.395 ; gain = 73.246
+---------------------------------------------------------------------------------

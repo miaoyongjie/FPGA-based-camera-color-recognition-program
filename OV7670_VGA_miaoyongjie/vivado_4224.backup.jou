@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 30 23:05:08 2020
+# Process ID: 4224
+# Current directory: D:/OV7670_VGA/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21320 D:\OV7670_VGA\project_1\project_1.xpr
+# Log file: D:/OV7670_VGA/project_1/vivado.log
+# Journal file: D:/OV7670_VGA/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/OV7670_VGA/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Aug  2 10:15:35 2020
+# Process ID: 7160
+# Current directory: C:/Vivado/NEXYS 4 DDR_Project/OV7670_VGA/OV7670_VGA_RGB/project_1.runs/impl_1
+# Command line: vivado.exe -log OV7670_VGA_TOP.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source OV7670_VGA_TOP.tcl -notrace
+# Log file: C:/Vivado/NEXYS 4 DDR_Project/OV7670_VGA/OV7670_VGA_RGB/project_1.runs/impl_1/OV7670_VGA_TOP.vdi
+# Journal file: C:/Vivado/NEXYS 4 DDR_Project/OV7670_VGA/OV7670_VGA_RGB/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source OV7670_VGA_TOP.tcl -notrace
