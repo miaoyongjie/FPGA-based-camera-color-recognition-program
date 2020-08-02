@@ -1,0 +1,27 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/sim/RAM_Line.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Line
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/sim/AXIS_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXIS_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_1_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_Bayer_To_RGB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_Bayer_To_RGB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_Csi_To_Dvp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_Csi_To_Dvp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_IIC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_IIC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_MIPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_MIPI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OV5647_Init
+INFO: [VRFC 10-311] analyzing module ROM_OV5647
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_Demo/Camera_Demo.srcs/sources_1/new/Trigger_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Trigger_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_Demo/Camera_Demo.srcs/sources_1/new/Camera_Demo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Camera_Demo
