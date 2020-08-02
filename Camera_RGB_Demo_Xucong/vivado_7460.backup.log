@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Aug  2 05:30:15 2020
+# Process ID: 7460
+# Current directory: C:/Users/SaSa/Desktop/Camera_RGB_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15472 C:\Users\SaSa\Desktop\Camera_RGB_Demo\Camera_RGB_Demo.xpr
+# Log file: C:/Users/SaSa/Desktop/Camera_RGB_Demo/vivado.log
+# Journal file: C:/Users/SaSa/Desktop/Camera_RGB_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SaSa/Desktop/Camera_RGB_Demo/Camera_RGB_Demo.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/SaSa/Desktop/Camera_RGB_Demo/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 801.180 ; gain = 153.449
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  2 05:30:47 2020...

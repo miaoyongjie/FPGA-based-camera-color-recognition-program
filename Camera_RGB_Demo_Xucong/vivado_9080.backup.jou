@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 18:25:35 2020
+# Process ID: 9080
+# Current directory: C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9744 C:\Users\51249\Documents\Tencent Files\512491013\FileRecv\Camera_RGB_Demo\Camera_Demo.xpr
+# Log file: C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/vivado.log
+# Journal file: C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.runs/impl_1/Camera_Demo.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.runs/impl_1/Camera_Demo.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.runs/impl_1/Camera_Demo.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

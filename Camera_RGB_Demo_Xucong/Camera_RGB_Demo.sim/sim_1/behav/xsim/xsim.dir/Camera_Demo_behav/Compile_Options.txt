@@ -1,0 +1,1 @@
+-wto "231b9d1d2f9e45ea9516f3e116887559" --incr --debug "typical" --relax --mt "2" -L "blk_mem_gen_v8_4_2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "Camera_Demo_behav" "xil_defaultlib.Camera_Demo" "xil_defaultlib.glbl" -log "elaborate.log" 

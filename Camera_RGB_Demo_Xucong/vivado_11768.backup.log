@@ -1,0 +1,320 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 16:50:15 2020
+# Process ID: 11768
+# Current directory: C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5576 C:\Users\51249\Documents\Tencent Files\512491013\FileRecv\Camera_RGB_Demo\Camera_Demo.xpr
+# Log file: C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/vivado.log
+# Journal file: C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 707.629 ; gain = 113.082
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1835.969 ; gain = 684.246
+set_property PROGRAM.FILE {C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.runs/impl_1/Camera_Demo.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.runs/impl_1/Camera_Demo.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7s15ftgb196-1
+Top: Camera_Demo
+WARNING: [Synth 8-2292] literal value truncated to fit in 27 bits [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Key_Test_Color.v:60]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1958.883 ; gain = 68.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Camera_Demo' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Camera_Demo.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/.Xil/Vivado-11768-DESKTOP-QOU183U/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/.Xil/Vivado-11768-DESKTOP-QOU183U/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'RGB_LED_Demo' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/RGB_LED_Demo.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Key_Test_Color' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Key_Test_Color.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Key_Test_Color' (2#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Key_Test_Color.v:23]
+WARNING: [Synth 8-689] width (24) of port connection 'rgb_data' does not match port width (1) of module 'Key_Test_Color' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/RGB_LED_Demo.v:46]
+INFO: [Synth 8-6157] synthesizing module 'Driver_RGB_LED' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_RGB_LED.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_SK6805' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_RGB_LED.v:59]
+	Parameter Default_Factor bound to: 10'b1111101000 
+	Parameter Default_Freq_Num bound to: 10'b0000001100 
+	Parameter Default_Code_H_0 bound to: 10'b0000000011 
+	Parameter Default_Code_H_1 bound to: 10'b0000001001 
+	Parameter Default_DATA_BIT bound to: 6'b110000 
+	Parameter ST_IDLE bound to: 2'b00 
+	Parameter ST_DIVISION bound to: 2'b11 
+	Parameter ST_SEND_0 bound to: 2'b01 
+	Parameter ST_SEND_1 bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'Driver_SK6805' (3#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_RGB_LED.v:59]
+INFO: [Synth 8-6157] synthesizing module 'clk_division' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/clk_division.v:23]
+WARNING: [Synth 8-5788] Register cnt_reg in module clk_division is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/clk_division.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'clk_division' (4#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/clk_division.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_RGB_LED' (5#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_RGB_LED.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RGB_LED_Demo' (6#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/RGB_LED_Demo.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/.Xil/Vivado-11768-DESKTOP-QOU183U/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (7#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/.Xil/Vivado-11768-DESKTOP-QOU183U/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_MIPI' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_MIPI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/.Xil/Vivado-11768-DESKTOP-QOU183U/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (8#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/.Xil/Vivado-11768-DESKTOP-QOU183U/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'csi2_d_phy_rx_0' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/.Xil/Vivado-11768-DESKTOP-QOU183U/realtime/csi2_d_phy_rx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi2_d_phy_rx_0' (9#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/.Xil/Vivado-11768-DESKTOP-QOU183U/realtime/csi2_d_phy_rx_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'Data_Read' of module 'csi2_d_phy_rx_0' requires 33 connections, but only 25 given [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_MIPI.v:75]
+INFO: [Synth 8-6157] synthesizing module 'csi_to_axis_0' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/.Xil/Vivado-11768-DESKTOP-QOU183U/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi_to_axis_0' (10#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/.Xil/Vivado-11768-DESKTOP-QOU183U/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Csi_To_Dvp' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23]
+	Parameter Default_AXIS_TREADY bound to: 1'b1 
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AXIS_Data_RAM' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/.Xil/Vivado-11768-DESKTOP-QOU183U/realtime/AXIS_Data_RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AXIS_Data_RAM' (11#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/.Xil/Vivado-11768-DESKTOP-QOU183U/realtime/AXIS_Data_RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Csi_To_Dvp' (12#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Bayer_To_RGB' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+	Parameter DELAY_LINE bound to: 2 - type: integer 
+	Parameter ST_IDLE bound to: 3'b000 
+	Parameter ST_IDLE_START bound to: 3'b001 
+	Parameter ST_PATTERN0 bound to: 3'b010 
+	Parameter ST_PATTERN1 bound to: 3'b011 
+	Parameter ST_IDLE_GR bound to: 3'b100 
+	Parameter ST_PATTERN2 bound to: 3'b101 
+	Parameter ST_PATTERN3 bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'RAM_Line' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/.Xil/Vivado-11768-DESKTOP-QOU183U/realtime/RAM_Line_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_Line' (13#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/.Xil/Vivado-11768-DESKTOP-QOU183U/realtime/RAM_Line_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Bayer_To_RGB' (14#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_MIPI' (15#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_MIPI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (16#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+INFO: [Synth 8-6157] synthesizing module 'OV5647_Init' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:23]
+	Parameter SLAVE_ADDRESS bound to: 8'b01101100 
+	Parameter INITIAL_NUM bound to: 8'b01011000 
+	Parameter REG_ADDR2_EN bound to: 1'b1 
+	Parameter WR_HOLD_T bound to: 4'b1010 
+	Parameter WR_VALID bound to: 1'b1 
+	Parameter WAIT_DELAY bound to: 20'b00011000011010100000 
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter WAIT bound to: 2'b10 
+	Parameter END bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'ROM_OV5647' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:243]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_OV5647' (17#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:243]
+INFO: [Synth 8-6157] synthesizing module 'Trigger_Generator' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Trigger_Generator.v:23]
+	Parameter ST_WAIT bound to: 2'b00 
+	Parameter ST_START bound to: 2'b01 
+	Parameter ST_HOLD bound to: 2'b10 
+	Parameter ST_END bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'Trigger_Generator' (18#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Trigger_Generator.v:23]
+WARNING: [Synth 8-6014] Unused sequential element en_rd_rom_reg was removed.  [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'OV5647_Init' (19#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_IIC' [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:22]
+	Parameter System_Clk_MHz bound to: 13'b0000001100100 
+	Parameter Set_IIC_SCL_kHz bound to: 13'b0000001100100 
+	Parameter SCL_Divider bound to: 13'b0000000000001 
+	Parameter SCL_SUM bound to: 13'b0001111101000 
+	Parameter SCL_H_START bound to: 0 - type: integer 
+	Parameter SCL_H_CENTER bound to: 249 - type: integer 
+	Parameter SCL_L_START bound to: 499 - type: integer 
+	Parameter SCL_L_CENTER bound to: 749 - type: integer 
+	Parameter ST_IDLE bound to: 5'b00000 
+	Parameter ST_START bound to: 5'b00001 
+	Parameter ST_W_SADDR bound to: 5'b00010 
+	Parameter ST_ACK_0 bound to: 5'b00011 
+	Parameter ST_W_ADDR_H bound to: 5'b00100 
+	Parameter ST_ACK_1 bound to: 5'b00101 
+	Parameter ST_W_ADDR_L bound to: 5'b00110 
+	Parameter ST_ACK_2 bound to: 5'b00111 
+	Parameter ST_W_DATA bound to: 5'b01000 
+	Parameter ST_ACK_3 bound to: 5'b01001 
+	Parameter ST_START_R bound to: 5'b01010 
+	Parameter ST_W_SADDR_R bound to: 5'b01011 
+	Parameter ST_ACK_4 bound to: 5'b01100 
+	Parameter ST_R_DATA bound to: 5'b01101 
+	Parameter ST_NACK bound to: 5'b01110 
+	Parameter ST_STOP bound to: 5'b01111 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:388]
+WARNING: [Synth 8-5788] Register data_r_o_reg in module Driver_IIC is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_IIC' (20#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:22]
+WARNING: [Synth 8-3848] Net iic_read in module/entity Camera_Demo does not have driver. [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Camera_Demo.v:126]
+INFO: [Synth 8-6155] done synthesizing module 'Camera_Demo' (21#1) [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Camera_Demo.v:23]
+WARNING: [Synth 8-3331] design Key_Test_Color has unconnected port rgb_data
+WARNING: [Synth 8-3331] design Key_Test_Color has unconnected port i_key
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[23]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[22]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[21]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[20]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[19]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[18]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[17]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[16]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[15]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[14]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[13]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[12]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[11]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[10]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[9]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[8]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[7]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[6]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[5]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[4]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[3]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[2]
+WARNING: [Synth 8-3331] design RGB_LED_Demo has unconnected port rgb_data[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2004.098 ; gain = 114.031
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin MIPI_Camera_IIC:i_iic_read to constant 0 [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/new/Camera_Demo.v:144]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2004.098 ; gain = 114.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2004.098 ; gain = 114.031
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'Mini_HDMI_Driver'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.dcp' for cell 'MIPI_Trans_Driver/camera_clock'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0.dcp' for cell 'MIPI_Trans_Driver/Data_Read'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/csi_to_axis_0/csi_to_axis_0.dcp' for cell 'MIPI_Trans_Driver/Data_To_Csi'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM.dcp' for cell 'MIPI_Trans_Driver/Driver_Csi_To_Dvp0/RAM_AXIS'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.dcp' for cell 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff0'
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. MIPI_Trans_Driver/camera_clock/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'MIPI_Trans_Driver/camera_clock/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_10/inst'
+Finished Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_10/inst'
+Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_10/inst'
+Finished Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_10/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Camera_Demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Camera_Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/csi_to_axis_0/hdl/csi_to_axis.xdc] for cell 'MIPI_Trans_Driver/Data_To_Csi/U0'
+Finished Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/csi_to_axis_0/hdl/csi_to_axis.xdc] for cell 'MIPI_Trans_Driver/Data_To_Csi/U0'
+Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.xdc] for cell 'MIPI_Trans_Driver/Data_Read/U0'
+Finished Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.xdc] for cell 'MIPI_Trans_Driver/Data_Read/U0'
+Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'Mini_HDMI_Driver/U0'
+Finished Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'Mini_HDMI_Driver/U0'
+Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'MIPI_Trans_Driver/camera_clock/inst'
+Finished Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'MIPI_Trans_Driver/camera_clock/inst'
+Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'MIPI_Trans_Driver/camera_clock/inst'
+Finished Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'MIPI_Trans_Driver/camera_clock/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Camera_Demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Camera_Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2267.141 ; gain = 0.000
+Parsing XDC File [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Camera_Demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Camera_Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2267.141 ; gain = 0.000
+Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'Mini_HDMI_Driver/U0'
+Finished Parsing XDC File [c:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'Mini_HDMI_Driver/U0'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2267.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 2267.141 ; gain = 377.074
+64 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 2267.141 ; gain = 377.074
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sat Aug  1 17:35:52 2020] Launched synth_1...
+Run output will be captured here: C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sat Aug  1 17:51:17 2020] Launched impl_1...
+Run output will be captured here: C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sat Aug  1 17:55:54 2020] Launched impl_1...
+Run output will be captured here: C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sat Aug  1 18:21:52 2020] Launched impl_1...
+Run output will be captured here: C:/Users/51249/Documents/Tencent Files/512491013/FileRecv/Camera_RGB_Demo/Camera_Demo.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 18:25:08 2020...
